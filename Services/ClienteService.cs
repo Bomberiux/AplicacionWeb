@@ -31,12 +31,13 @@ namespace AplicacionWeb.Services
             var cliente = _clientes.FirstOrDefault(c => c.Id == clienteActualizado.Id);
             if (cliente != null)
             {
-                cliente.Nombre = clienteActualizado.Nombre;
-                cliente.Apellido = clienteActualizado.Apellido;
-                cliente.Edad = clienteActualizado.Edad;
-                cliente.Direccion = clienteActualizado.Direccion;
-                cliente.Telefono = clienteActualizado.Telefono;
-                cliente.Genero = clienteActualizado.Genero;
+               cliente.Nombre = clienteActualizado.Nombre;
+               cliente.Apellido = clienteActualizado.Apellido;
+               cliente.Edad = clienteActualizado.Edad;
+               cliente.Direccion = clienteActualizado.Direccion;
+               cliente.Telefono = clienteActualizado.Telefono;
+               cliente.Genero = clienteActualizado.Genero;
+               cliente.Cedula_RUC=clienteActualizado.Cedula_RUC;
             }
         }
 
